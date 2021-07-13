@@ -1,0 +1,156 @@
+1. GET http://174.45.209.127/api/staff
+
+<ArrayOfStaff xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/SampleWebAPIProj.Models">
+    <Staff>
+        <FirstName>Sensei</FirstName>
+        <LastName>Katie</LastName>
+        <Phone>4055554342</Phone>
+        <StaffId>2</StaffId>
+        <Status>Off Duty</Status>
+    </Staff>
+    <Staff>
+        <FirstName>MissyElliot</FirstName>
+        <LastName>Trouble</LastName>
+        <Phone>999-966-4542</Phone>
+        <StaffId>3</StaffId>
+        <Status>Fired</Status>
+    </Staff>
+    <Staff>
+        <FirstName>Cheryl</FirstName>
+        <LastName>Hercula</LastName>
+        <Phone>270-444-4444</Phone>
+        <StaffId>6</StaffId>
+        <Status>Released</Status>
+    </Staff>
+    <Staff>
+        <FirstName>Bobert</FirstName>
+        <LastName>Jefferson</LastName>
+        <Phone>406-222-2222</Phone>
+        <StaffId>8</StaffId>
+        <Status>Inactive</Status>
+    </Staff>
+    <Staff>
+        <FirstName>Francis</FirstName>
+        <LastName>Thompson</LastName>
+        <Phone>5555551234</Phone>
+        <StaffId>10</StaffId>
+        <Status>On Duty</Status>
+    </Staff>
+    <Staff>
+        <FirstName>Shaun</FirstName>
+        <LastName>Marsh</LastName>
+        <Phone>4055554342</Phone>
+        <StaffId>18</StaffId>
+        <Status>Off Duty</Status>
+    </Staff>
+    <Staff>
+        <FirstName>Shaun</FirstName>
+        <LastName>Marsh</LastName>
+        <Phone>4055554342</Phone>
+        <StaffId>19</StaffId>
+        <Status>Off Duty</Status>
+    </Staff>
+    <Staff>
+        <FirstName>Big</FirstName>
+        <LastName>Trouble jr</LastName>
+        <Phone>999-966-4342</Phone>
+        <StaffId>20</StaffId>
+        <Status>missing</Status>
+    </Staff>
+    <Staff>
+        <FirstName>Sammy</FirstName>
+        <LastName>Hagar</LastName>
+        <Phone>4055555664</Phone>
+        <StaffId>22</StaffId>
+        <Status>Deceased</Status>
+    </Staff>
+    <Staff>
+        <FirstName>Steve</FirstName>
+        <LastName>Stevens</LastName>
+        <Phone>4051111111</Phone>
+        <StaffId>30</StaffId>
+        <Status>Off Duty</Status>
+    </Staff>
+    <Staff>
+        <FirstName>Jeremiah</FirstName>
+        <LastName>Johnson</LastName>
+        <Phone>8005554342</Phone>
+        <StaffId>32</StaffId>
+        <Status>Need's Help</Status>
+    </Staff>
+    <Staff>
+        <FirstName>Kyle</FirstName>
+        <LastName>Broflovski</LastName>
+        <Phone>3038675309</Phone>
+        <StaffId>37</StaffId>
+        <Status>Off Duty</Status>
+    </Staff>
+    <Staff>
+        <FirstName>Jenny</FirstName>
+        <LastName>Aniston</LastName>
+        <Phone>3038675309</Phone>
+        <StaffId>40</StaffId>
+        <Status>Rachel Greene</Status>
+    </Staff>
+    <Staff>
+        <FirstName>Tom</FirstName>
+        <LastName>Brady</LastName>
+        <Phone>3038675309</Phone>
+        <StaffId>42</StaffId>
+        <Status>Please Retire or go to the Steelers</Status>
+    </Staff>
+    <Staff>
+        <FirstName>Jeb</FirstName>
+        <LastName>Jerb</LastName>
+        <Phone>4055554342</Phone>
+        <StaffId>43</StaffId>
+        <Status>Off Duty</Status>
+    </Staff>
+    <Staff>
+        <FirstName>Stan</FirstName>
+        <LastName>Marsh</LastName>
+        <Phone>4445559865</Phone>
+        <StaffId>47</StaffId>
+        <Status>Sick of farming, just wants to hang out with the guys</Status>
+    </Staff>
+    <Staff>
+        <FirstName>Marty</FirstName>
+        <LastName>Smith</LastName>
+        <Phone>4055551216</Phone>
+        <StaffId>52</StaffId>
+        <Status>On Duty</Status>
+    </Staff>
+</ArrayOfStaff>
+
+2. GET 
+
+<Staff xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/SampleWebAPIProj.Models">
+    <FirstName>MissyElliot</FirstName>
+    <LastName>Trouble</LastName>
+    <Phone>999-966-4542</Phone>
+    <StaffId>3</StaffId>
+    <Status>Fired</Status>
+</Staff>
+
+3. POST http://174.45.209.127/api/staff
+
+<Staff xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/SampleWebAPIProj.Models">
+    <FirstName>Tucker</FirstName>
+    <LastName>Adams</LastName>
+    <Phone>502-542-9287</Phone>
+    <StaffId>1</StaffId> (automatically assigned 54)
+    <Status>Fired</Status>
+</Staff>
+
+4. PUT http://174.45.209.127/api/staff/3
+
+<Staff xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/SampleWebAPIProj.Models">
+    <FirstName>MasterHakou</FirstName>
+    <LastName>SpiritedAway</LastName>
+    <Phone>887-788-7788</Phone>
+    <StaffId>3</StaffId>
+    <Status>Fired</Status>
+</Staff>
+
+5. DELETE http://174.45.209.127/api/staff/54
+Tucker Adams, staffID 54, not present in a GET all staff
