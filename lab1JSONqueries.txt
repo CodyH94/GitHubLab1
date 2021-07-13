@@ -1,0 +1,154 @@
+1. GET http://174.45.209.127/api/staff
+
+[
+    {
+        "StaffId": 2,
+        "FirstName": "Sensei",
+        "LastName": "Katie",
+        "Phone": "4055554342",
+        "Status": "Off Duty"
+    },
+    {
+        "StaffId": 3,
+        "FirstName": "Mr.",
+        "LastName": "Trouble",
+        "Phone": "999-966-4542",
+        "Status": "Fired"
+    },
+    {
+        "StaffId": 6,
+        "FirstName": "Cheryl",
+        "LastName": "Hercula",
+        "Phone": "270-444-4444",
+        "Status": "Released"
+    },
+    {
+        "StaffId": 8,
+        "FirstName": "Bobert",
+        "LastName": "Jefferson",
+        "Phone": "406-222-2222",
+        "Status": "Inactive"
+    },
+    {
+        "StaffId": 10,
+        "FirstName": "Francis",
+        "LastName": "Thompson",
+        "Phone": "5555551234",
+        "Status": "On Duty"
+    },
+    {
+        "StaffId": 18,
+        "FirstName": "Shaun",
+        "LastName": "Marsh",
+        "Phone": "4055554342",
+        "Status": "Off Duty"
+    },
+    {
+        "StaffId": 19,
+        "FirstName": "Shaun",
+        "LastName": "Marsh",
+        "Phone": "4055554342",
+        "Status": "Off Duty"
+    },
+    {
+        "StaffId": 20,
+        "FirstName": "Big",
+        "LastName": "Trouble jr",
+        "Phone": "999-966-4342",
+        "Status": "missing"
+    },
+    {
+        "StaffId": 22,
+        "FirstName": "Sammy",
+        "LastName": "Hagar",
+        "Phone": "4055555664",
+        "Status": "Deceased"
+    },
+    {
+        "StaffId": 30,
+        "FirstName": "Steve",
+        "LastName": "Stevens",
+        "Phone": "4051111111",
+        "Status": "Off Duty"
+    },
+    {
+        "StaffId": 32,
+        "FirstName": "Jeremiah",
+        "LastName": "Johnson",
+        "Phone": "8005554342",
+        "Status": "Need's Help"
+    },
+    {
+        "StaffId": 37,
+        "FirstName": "Kyle",
+        "LastName": "Broflovski",
+        "Phone": "3038675309",
+        "Status": "Off Duty"
+    },
+    {
+        "StaffId": 40,
+        "FirstName": "Jenny",
+        "LastName": "Aniston",
+        "Phone": "3038675309",
+        "Status": "Rachel Greene"
+    },
+    {
+        "StaffId": 42,
+        "FirstName": "Tom",
+        "LastName": "Brady",
+        "Phone": "3038675309",
+        "Status": "Please Retire or go to the Steelers"
+    },
+    {
+        "StaffId": 43,
+        "FirstName": "Jeb",
+        "LastName": "Jerb",
+        "Phone": "4055554342",
+        "Status": "Off Duty"
+    },
+    {
+        "StaffId": 47,
+        "FirstName": "Stan",
+        "LastName": "Marsh",
+        "Phone": "4445559865",
+        "Status": "Sick of farming, just wants to hang out with the guys"
+    },
+    {
+        "StaffId": 52,
+        "FirstName": "Marty",
+        "LastName": "Smith",
+        "Phone": "4055551216",
+        "Status": "On Duty"
+    }
+]
+
+2. GET http://174.45.209.127/api/staff/3
+{
+    "StaffId": 3,
+    "FirstName": "Mr.",
+    "LastName": "Trouble",
+    "Phone": "999-966-4542",
+    "Status": "Fired"
+}
+
+3. http://174.45.209.127/api/staff/
+{
+	"StaffId":1, (automatically assigned 53)
+	"FirstName":"MJ",
+	"LastName":"Fairchild",
+	"Phone":"406-406-6044",
+	"Status":"Active"
+}
+
+4. PUT http://174.45.209.127/api/staff/3
+
+{
+	"StaffId":3,
+	"FirstName":"MissyElliot",
+	"LastName":"Trouble",
+	"Phone":"999-966-4542",
+	"Status":"Fired"
+}
+
+5. DELETE http://174.45.209.127/api/staff/53
+MJ Fairchild, staffID 53, not present in a GET all staff
